@@ -24,11 +24,6 @@
 
 ---
 
-## 🏆 GitHub Trophies
-[![trophy](https://github-profile-trophy.vercel.app/?username=kangyun9957&theme=onedark)](https://github.com/ryo-ma/github-profile-trophy)
-
----
-
 ## 🌐 Connect with me
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://linkedin.com/in/kangyun9957)](https://linkedin.com/in/kangyun9957)
 [![Gmail Badge](https://img.shields.io/badge/-kangyun9957@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:kangyun9957@gmail.com)](mailto:kangyun9957@gmail.com)
