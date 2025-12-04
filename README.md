@@ -17,10 +17,12 @@
 ---
 
 ## 📊 GitHub Stats
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=kangyun9957&show_icons=true&theme=radical)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=kangyun9957&show_icons=true&theme=radical&cache_seconds=1800)
+
 
 ## 📈 Top Languages
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kangyun9957&layout=compact&theme=dracula)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kangyun9957&layout=compact&theme=dracula&cache_seconds=1800)
+
 
 ---
 
