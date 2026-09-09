@@ -16,13 +16,38 @@
 
 ---
 
-## 📊 GitHub Stats
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=kangyun9957&show_icons=true&theme=radical&cache_seconds=1800)
+<!--
+  2026-09: github-readme-stats.vercel.app 공개 인스턴스가 중단(HTTP 503 DEPLOYMENT_PAUSED)되어
+  Stats / Top Langs 이미지가 모두 깨졌음 → github-profile-summary-cards 로 교체.
+  <picture> 로 GitHub 라이트/다크 테마에 맞춰 카드 색이 자동 전환됨.
+-->
 
+## 📊 GitHub Stats
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=kangyun9957&theme=github_dark">
+  <img alt="Profile details" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=kangyun9957&theme=default">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=kangyun9957&theme=github_dark">
+  <img alt="GitHub stats" width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=kangyun9957&theme=default">
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=kangyun9957&theme=github_dark&utcOffset=9">
+  <img alt="Productive time" width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=kangyun9957&theme=default&utcOffset=9">
+</picture>
 
 ## 📈 Top Languages
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kangyun9957&layout=compact&theme=dracula&cache_seconds=1800)
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=kangyun9957&theme=github_dark">
+  <img alt="Top languages by commit" width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=kangyun9957&theme=default">
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=kangyun9957&theme=github_dark">
+  <img alt="Top languages by repo" width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=kangyun9957&theme=default">
+</picture>
 
 ---
 
