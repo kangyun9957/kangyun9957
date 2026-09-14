@@ -17,36 +17,38 @@
 ---
 
 <!--
-  2026-09: github-readme-stats.vercel.app 공개 인스턴스가 중단(HTTP 503 DEPLOYMENT_PAUSED)되어
-  Stats / Top Langs 이미지가 모두 깨졌음 → github-profile-summary-cards 로 교체.
-  <picture> 로 GitHub 라이트/다크 테마에 맞춰 카드 색이 자동 전환됨.
+  통계 카드는 외부 서버(github-readme-stats / github-profile-summary-cards 공개 인스턴스)를
+  쓰지 않는다. 둘 다 2026-09 기준 503 또는 rate limit 에러 이미지를 돌려줬음.
+  대신 .github/workflows/profile-summary-cards.yml 이 매일 SVG 를 생성해
+  profile-summary-card-output/ 에 커밋하고, 여기서는 그 파일을 참조한다.
+  <picture> 로 GitHub 라이트/다크 테마에 맞춰 카드가 자동 전환됨.
 -->
 
 ## 📊 GitHub Stats
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=kangyun9957&theme=github_dark">
-  <img alt="Profile details" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=kangyun9957&theme=default">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kangyun9957/kangyun9957/main/profile-summary-card-output/github_dark/0-profile-details.svg">
+  <img alt="Profile details" src="https://raw.githubusercontent.com/kangyun9957/kangyun9957/main/profile-summary-card-output/default/0-profile-details.svg">
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=kangyun9957&theme=github_dark">
-  <img alt="GitHub stats" width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=kangyun9957&theme=default">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kangyun9957/kangyun9957/main/profile-summary-card-output/github_dark/3-stats.svg">
+  <img alt="GitHub stats" width="49%" src="https://raw.githubusercontent.com/kangyun9957/kangyun9957/main/profile-summary-card-output/default/3-stats.svg">
 </picture>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=kangyun9957&theme=github_dark&utcOffset=9">
-  <img alt="Productive time" width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=kangyun9957&theme=default&utcOffset=9">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kangyun9957/kangyun9957/main/profile-summary-card-output/github_dark/4-productive-time.svg">
+  <img alt="Productive time" width="49%" src="https://raw.githubusercontent.com/kangyun9957/kangyun9957/main/profile-summary-card-output/default/4-productive-time.svg">
 </picture>
 
 ## 📈 Top Languages
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=kangyun9957&theme=github_dark">
-  <img alt="Top languages by commit" width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=kangyun9957&theme=default">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kangyun9957/kangyun9957/main/profile-summary-card-output/github_dark/2-most-commit-language.svg">
+  <img alt="Top languages by commit" width="49%" src="https://raw.githubusercontent.com/kangyun9957/kangyun9957/main/profile-summary-card-output/default/2-most-commit-language.svg">
 </picture>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=kangyun9957&theme=github_dark">
-  <img alt="Top languages by repo" width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=kangyun9957&theme=default">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kangyun9957/kangyun9957/main/profile-summary-card-output/github_dark/1-repos-per-language.svg">
+  <img alt="Top languages by repo" width="49%" src="https://raw.githubusercontent.com/kangyun9957/kangyun9957/main/profile-summary-card-output/default/1-repos-per-language.svg">
 </picture>
 
 ---

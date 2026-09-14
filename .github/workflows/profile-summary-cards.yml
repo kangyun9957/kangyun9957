@@ -1,0 +1,36 @@
+# 프로필 README 통계 카드를 외부 서버 대신 이 레포 안에서 직접 생성한다.
+# - github-readme-stats.vercel.app  : 2026-09 현재 DEPLOYMENT_PAUSED (503)
+# - github-profile-summary-cards.vercel.app : 공개 인스턴스가 GitHub API rate limit 에 걸려
+#   "ERROR!!! Cards are temporarily rate limited" 이미지를 돌려줌
+# → GitHub Action 이 SVG 를 만들어 profile-summary-card-output/ 에 커밋하고
+#   README 는 그 파일을 참조하므로 외부 서버 상태와 무관하게 항상 렌더링됨.
+name: GitHub Profile Summary Cards
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # 매일 09:00 KST
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/profile-summary-cards.yml"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: generate-github-profile-summary-cards
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          # 기본 GITHUB_TOKEN 으로 공개 활동 통계는 모두 생성됨.
+          # 비공개 레포 기여까지 포함하려면 repo + read:user 스코프 PAT 를
+          # 레포 Settings > Secrets 에 SUMMARY_GITHUB_TOKEN 이름으로 등록하면 자동 사용됨.
+          GITHUB_TOKEN: ${{ secrets.SUMMARY_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
+        with:
+          USERNAME: ${{ github.repository_owner }}
+          BRANCH_NAME: "main"
+          UTC_OFFSET: 9
+          AUTO_PUSH: true
